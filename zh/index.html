@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN" class="zh-page">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="袁诚志的研究地图：AI4Math、形式化数学，以及面向长程数学工作的工具、共享状态、多 Agent 协作与证据。">
+  <meta property="og:title" content="袁诚志 · 研究地图">
+  <meta property="og:description" content="AI4Math、形式化数学，以及面向长程数学工作的多 Agent 系统。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="en_US">
+  <title>袁诚志 · 研究地图</title>
+  <link rel="canonical" href="https://yuan-chengzhi.github.io/zh/">
+  <link rel="alternate" hreflang="en" href="https://yuan-chengzhi.github.io/">
+  <link rel="alternate" hreflang="zh-CN" href="https://yuan-chengzhi.github.io/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://yuan-chengzhi.github.io/">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body.zh-page { --serif: "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", "STSong", Georgia, serif; --sans: "Noto Sans CJK SC", "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif; line-height: 1.7; }
+    body.zh-page .wordmark-text, body.zh-page .project-type, body.zh-page .project-status, body.zh-page .project-label, body.zh-page .horizon-kicker, body.zh-page .eyebrow, body.zh-page .note-label, body.zh-page .note-footer, body.zh-page .project-period, body.zh-page .project-foot, body.zh-page .horizon-tags, body.zh-page .site-footer { letter-spacing: .02em; text-transform: none; }
+    body.zh-page h1, body.zh-page h2, body.zh-page h3 { letter-spacing: -.025em; }
+    .language-switch { white-space: nowrap; }
+  </style>
+  <script defer src="site.js?v=zh-1"></script>
+</head>
+<body class="zh-page">
+  <a class="skip-link" href="#main-content">跳转到主要内容</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="./" aria-label="袁诚志研究地图首页"><span class="wordmark-mark">CY</span><span class="wordmark-text">研究地图</span></a>
+      <nav aria-label="主要导航">
+        <a href="#map">地图</a><a href="#work">项目</a><a href="#questions">当前问题</a><a href="#horizon">研究展望</a><a href="#about">关于我</a>
+        <a class="language-switch" href="../">English</a><a class="nav-external" href="https://github.com/yuan-chengzhi" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">数学 · 人工智能 · AI4Math</p>
+        <h1 id="hero-title">袁诚志 <span class="cn-name">Chengzhi Yuan</span></h1>
+        <p class="hero-lede">我关注如何构建并不断改进研究环境，让 AI 在更长、更复杂的数学任务中可靠地推进、协作和积累。当前以形式化证明为主要实验场景，从工具、反馈、共享状态与证据出发，逐步理解多 Agent 系统。</p>
+        <p class="hero-body">我的工作从一个很实际的问题开始：怎样让 Agent 在困难的数学任务上可靠推进？随着任务变长、依赖增多，问题逐渐变成：研究环境需要保存什么，才能让局部工作被检查、交接并继续？形式化数学是我目前的实验场景；更广泛的问题是，随着任务规模增长，工具、证据和组织方式应如何变化。</p>
+        <div class="hero-actions"><a class="button button-primary" href="#map">查看研究地图 <span aria-hidden="true">↓</span></a><a class="button button-secondary" href="https://github.com/yuan-chengzhi" target="_blank" rel="noreferrer">打开 GitHub <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-tags" aria-label="研究方向"><span>形式化数学</span><span>工具与反馈</span><span>多 Agent 系统</span><span>图论、网络与算法</span></div>
+      </div>
+      <aside class="hero-note" aria-label="一个反复出现的问题"><div class="note-label">一个反复出现的问题</div><p>当数学工作长到无法由一次尝试完成时，系统应该记住什么，才能让下一次尝试验证并继续它？</p><div class="note-footer"><span class="signal-dot" aria-hidden="true"></span> 研究进行中</div></aside>
+    </section>
+    <section id="map" class="section shell" aria-labelledby="map-title">
+      <div class="section-heading"><div><p class="eyebrow">01 · 研究地图</p><h2 id="map-title">问题、实验与证据之间的关系</h2></div><p class="section-intro">这些项目由反复出现的问题连接起来，而不是一条预先设计好的流程。每个分支都改变了我对下一步实验的理解。</p></div>
+      <div class="map-frame"><div class="map-visual" aria-label="研究地图，展示 Putnam 2025、工具与反馈、ContextSwarm 与 FLT、运行轨迹与证据，以及可演化环境之间的联系。" role="img">
+        <svg class="research-map" viewBox="0 0 980 410" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><defs><linearGradient id="map-line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b85c43" stop-opacity=".42"/><stop offset=".5" stop-color="#287c75" stop-opacity=".55"/><stop offset="1" stop-color="#738293" stop-opacity=".52"/></linearGradient></defs><path class="map-edge" d="M185 130 C280 65 330 75 414 126"/><path class="map-edge" d="M185 274 C288 338 330 326 414 278"/><path class="map-edge" d="M500 160 C574 120 612 112 684 142"/><path class="map-edge" d="M500 248 C573 283 614 295 684 266"/><path class="map-edge map-edge-dashed" d="M765 184 C807 205 824 216 849 244"/><path class="map-edge map-edge-dashed" d="M764 252 C804 228 824 213 849 184"/><g class="map-label map-label-small" transform="translate(279 86)"><rect width="94" height="25" rx="12.5"/><text x="47" y="16" text-anchor="middle">促成</text></g><g class="map-label map-label-small" transform="translate(279 299)"><rect width="102" height="25" rx="12.5"/><text x="51" y="16" text-anchor="middle">在其中显现</text></g><g class="map-label map-label-small" transform="translate(573 103)"><rect width="102" height="25" rx="12.5"/><text x="51" y="16" text-anchor="middle">在其中重新审视</text></g><g class="map-label map-label-small" transform="translate(575 288)"><rect width="111" height="25" rx="12.5"/><text x="55" y="16" text-anchor="middle">形成证据</text></g><a href="#project-putnam" class="map-node map-node-rust"><circle cx="125" cy="130" r="60"/><text x="125" y="124" text-anchor="middle"><tspan x="125">Putnam</tspan><tspan x="125" dy="19">2025</tspan></text></a><a href="#project-tools" class="map-node map-node-blue"><circle cx="465" cy="130" r="60"/><text x="465" y="124" text-anchor="middle"><tspan x="465">工具与</tspan><tspan x="465" dy="19">反馈</tspan></text></a><a href="#project-flt" class="map-node map-node-teal"><circle cx="465" cy="278" r="60"/><text x="465" y="272" text-anchor="middle"><tspan x="465">ContextSwarm</tspan><tspan x="465" dy="19">/ FLT</tspan></text></a><a href="#project-traces" class="map-node map-node-navy"><circle cx="735" cy="205" r="60"/><text x="735" y="199" text-anchor="middle"><tspan x="735">运行轨迹与</tspan><tspan x="735" dy="19">证据</tspan></text></a><a href="#project-horizon" class="map-node map-node-outline"><circle cx="885" cy="205" r="60"/><text x="885" y="199" text-anchor="middle"><tspan x="885">可演化</tspan><tspan x="885" dy="19">环境</tspan></text></a></svg>
+      </div><div class="map-caption"><p><strong>这不是一条固定流程，而是一组逐渐形成的关系。</strong>早期实验让我开始关注工具与反馈；更长的费马大定理形式化项目让我看到状态、交接和证据的重要性；对运行轨迹的分析，则把这些观察转化为下一步问题。</p><div class="map-legend" aria-label="地图图例"><span><i class="legend-dot rust"></i> 早期实验</span><span><i class="legend-dot teal"></i> 协作项目</span><span><i class="legend-dot navy"></i> 分析分支</span><span><i class="legend-dot outline"></i> 工作方向</span></div></div></div>
+      <div id="map-list" class="map-list" aria-label="研究地图的文字版本"></div>
+    </section>
+    <section id="work" class="section section-tint" aria-labelledby="work-title"><div class="shell"><div class="section-heading"><div><p class="eyebrow">02 · 项目轨迹</p><h2 id="work-title">改变问题的几个项目</h2></div><p class="section-intro">这里把共同项目、我的具体工作、可公开的证据和当前解释分开记录。随着新实验加入，这些卡片也会继续增长。</p></div><div id="project-grid" class="project-grid" aria-live="polite"></div><noscript><p>请启用 JavaScript 以查看项目卡片。</p></noscript></div></section>
+    <section id="questions" class="section shell" aria-labelledby="questions-title"><div class="question-layout"><div><p class="eyebrow">03 · 当前问题</p><h2 id="questions-title">我接下来想继续理解什么</h2><p class="question-lede">具体系统可以变化；我希望通过新的工作不断检验、修正并带走的是这些问题。</p></div><div class="question-list"><article class="question-card"><span class="question-index">01</span><h3>未完成的工作</h3><p>一项数学工作在成为完整证明之前，怎样表示，才能被验证、交接和继续使用？</p></article><article class="question-card"><span class="question-index">02</span><h3>交接与继承</h3><p>后续 Agent 需要继承什么，才能验证并继续此前的尝试？</p></article><article class="question-card"><span class="question-index">03</span><h3>规模与证据</h3><p>增加 Agent、算力和运行次数之后，我们凭什么判断得到的是更强的能力，而不只是更多的活动？</p></article></div></div></section>
+    <section id="horizon" class="section horizon-section" aria-labelledby="horizon-title"><div class="shell"><div class="section-heading"><div><p class="eyebrow">04 · 研究展望</p><h2 id="horizon-title">规模扩大后，问题会如何变化</h2></div><p class="section-intro">下面是从已有项目延伸出来的开放问题，不是已经完成的系统，也不是我想当作事实的预测。</p></div><div id="horizon-grid" class="horizon-grid"></div><div class="horizon-note"><span class="signal-dot" aria-hidden="true"></span><span>这些方向保持开放；具体系统和应用场景会随着新实验提供更好的证据而变化。</span></div></div></section>
+    <section id="about" class="section about-section" aria-labelledby="about-title"><div class="shell about-grid"><div><p class="eyebrow">05 · 关于我</p><h2 id="about-title">一份持续更新的研究记录</h2></div><div class="about-copy"><p>我目前是上海交通大学数学与人工智能双学位本科生。我对图论、网络结构和算法设计感兴趣，这些兴趣影响了我理解多 Agent 系统中的依赖、信息流和协作方式。</p><p>这个主页不是完成后的项目陈列，而是把项目、问题和证据放在同一张图上，记录我如何在实践中修正研究方向。新的项目会补充节点、关系或证据，而不是抹掉此前的路径。</p><div class="contact-row"><a class="text-link" href="https://github.com/yuan-chengzhi" target="_blank" rel="noreferrer">GitHub 主页 <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:yuanchengzhi@sjtu.edu.cn">联系我 <span aria-hidden="true">↗</span></a></div></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><span>袁诚志 · 研究地图</span><span>一个持续记录问题、实验与证据的页面。</span></div></footer>
+</body>
+</html>

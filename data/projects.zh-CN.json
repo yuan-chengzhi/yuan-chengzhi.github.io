@@ -1,0 +1,72 @@
+[
+  {
+    "id": "project-putnam",
+    "title": "Putnam 2025",
+    "type": "形式化优先实验",
+    "period": "2025 · 初始实验",
+    "status": "内部实验记录",
+    "statusTone": "rust",
+    "question": "工具、结构化反馈和执行循环，能否帮助 Agent 在困难的数学任务上可靠推进？",
+    "contribution": "我参与了 Pi Math First / Pi Lean Tools 环境、prompt 设计和 Ralph 式执行循环的改进，并根据运行结果分析下一轮系统优化的位置。",
+    "evidenceLabel": "内部实验记录。",
+    "evidence": "12 道题，每题 8 次并行尝试；单次完整运行约 5.5 小时；12 道题均达到本实验框架定义的内部 final_verified 状态。这不是 Putnam 官方成绩，也不代表一般数学能力。",
+    "relation": "起点",
+    "visibility": "公开摘要"
+  },
+  {
+    "id": "project-tools",
+    "title": "工具、反馈与证明状态",
+    "type": "贯穿性问题",
+    "period": "2025–2026 · 持续出现的问题",
+    "status": "持续问题",
+    "statusTone": "blue",
+    "question": "哪些信息和反馈，能让一次未完成的数学尝试对下一次尝试真正有用？",
+    "contribution": "在形式化项目中，我主要参与结构化证明系统（ProofState）与共享信息库（CPS）的优化、prompt 和实验运行方式的改进，以及对失败和瓶颈的整理，使下一轮实验能够利用这些信息。",
+    "evidenceLabel": "跨项目观察。",
+    "evidence": "这条线把早期单题实验与更长的形式化项目连接起来，记录的是仍在发展的研究问题，而不是已经完成的框架。",
+    "relation": "连接主线",
+    "visibility": "工作记录"
+  },
+  {
+    "id": "project-flt",
+    "title": "ContextSwarm / FLT",
+    "type": "协作式形式化项目",
+    "period": "2026 · 未完成的协作项目",
+    "status": "协作中 · 未完成",
+    "statusTone": "teal",
+    "question": "当单个 Agent 难以覆盖全部过程时，多个 Agent 如何共同推进一项长且依赖复杂的形式化证明？",
+    "contribution": "在 ContextSwarm 项目中，我参与结构化证明系统（ProofState）与共享信息库（CPS）的优化、prompt 和运行方式的改进、FLTBench 相关问题修复，并整理推进过程中暴露出的数学进展与系统瓶颈。",
+    "evidenceLabel": "共享项目记录。",
+    "evidence": "该阶段的费马大定理整体形式化最终未完成；本卡片记录我在协作项目中的具体工作。",
+    "relation": "长程分支",
+    "visibility": "公开描述"
+  },
+  {
+    "id": "project-traces",
+    "title": "运行轨迹与证据",
+    "type": "实验分析分支",
+    "period": "2026 · 同一 FLT 项目",
+    "status": "证据分析",
+    "statusTone": "navy",
+    "question": "实验运行轨迹能够告诉我们哪些关于证明进展、失败及继续推进所需信息的事情？",
+    "contribution": "我整理并分析实验运行轨迹与数据，考察结构化证明状态、共享信息记录、反馈和共享状态之间的关系，并参与图表制作、论文校读与稿件修改。",
+    "evidenceLabel": "分析记录。",
+    "evidence": "这一分支把一次大型协作实验转化为可检查的观察和限制；不披露私有或双盲稿件细节。",
+    "relation": "FLT 的分析分支",
+    "visibility": "公开边界"
+  },
+  {
+    "id": "project-horizon",
+    "title": "一个可演化的研究环境",
+    "type": "后续方向",
+    "period": "面向未来 · 待验证",
+    "status": "待验证",
+    "statusTone": "blue",
+    "question": "研究环境应如何根据实际数学工作中的证据，逐步演化自己的表示方式、链接、协议和挑战？",
+    "contribution": "我把前面项目中的观察整理为一个待验证的方向：保持问题可追踪，让实验推动系统调整，同时不预先锁定最终结构。",
+    "evidenceLabel": "研究计划。",
+    "evidence": "这是尚未完成的方向，也没有对应的公开代码仓库；只有新实验提供了更充分的证据，主页才会更新具体主张。",
+    "relation": "开放方向",
+    "visibility": "后续工作"
+  }
+]

@@ -1,9 +1,0 @@
-{
-  "nodes": [
-    {"anchor":"project-putnam","title":"Putnam 2025","description":"early formal-first agent experiment","tone":"rust"},
-    {"anchor":"project-tools","title":"Tools & feedback","description":"proof state, prompts, execution, and feedback","tone":"blue"},
-    {"anchor":"project-flt","title":"ContextSwarm / FLT","description":"collaborative long-horizon formalization","tone":"teal"},
-    {"anchor":"project-traces","title":"Trace & evidence","description":"analysis branch of the FLT campaign","tone":"navy"},
-    {"anchor":"project-horizon","title":"Living environment","description":"working direction for future experiments","tone":"outline"}
-  ]
-}

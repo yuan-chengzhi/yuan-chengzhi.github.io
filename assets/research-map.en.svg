@@ -1,0 +1,114 @@
+<svg class="research-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 570" role="group" aria-labelledby="map-en-title map-en-desc" lang="en">
+<title id="map-en-title">How the work connects</title>
+<desc id="map-en-desc">Each row connects a question to work and a specific recorded result. Dashed connections motivate a future question; they do not demonstrate self-evolution or improved capability.</desc>
+<style>text{font-family:system-ui,-apple-system,"Segoe UI","Noto Sans CJK SC",sans-serif;fill:#172333}
+.map-heading{font-size:12px;letter-spacing:.6px;fill:#526172}
+.map-edge{fill:none;stroke:#829591;stroke-width:1.6}
+.map-edge.direction{stroke:#8291a4;stroke-dasharray:5 5}
+.map-node{text-decoration:none;cursor:pointer}
+.map-node rect{fill:#fff;stroke:#cbd5d2;stroke-width:1.2}
+.map-node .node-title{font-size:15px;font-weight:600}
+.map-node .node-subtitle{font-size:12.5px;fill:#526172}
+.map-node.question rect{fill:#f6f8f5}
+.map-node.question text{font-size:14px;font-weight:500}
+.map-node.experiment rect{fill:#f0f5f2;stroke:var(--tone)}
+.map-node.experiment .node-title{font-size:16px;fill:var(--tone)}
+.map-node:hover rect,.map-node:focus-visible rect{stroke:#914632;stroke-width:2.4}
+.map-node:focus-visible{outline:none}
+.map-node.is-active rect{stroke:#914632;stroke-width:2.4}
+.map-edge.is-active{stroke:#914632;stroke-width:2.2}
+.future rect{fill:#f4f6f8;stroke:#63758b;stroke-dasharray:5 4}
+.future .future-title{font-size:21px;font-weight:600}
+.future .future-small{font-size:12.5px;fill:#526172}
+.campaign-label{font-size:10px;fill:#526172}</style>
+<defs>
+<marker id="map-en-record" viewBox="0 0 10 8" refX="10" refY="4" markerWidth="8" markerHeight="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 4L0 8Z" fill="#829591"/></marker>
+<marker id="map-en-direction" viewBox="0 0 10 8" refX="10" refY="4" markerWidth="8" markerHeight="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 4L0 8Z" fill="#8291a4"/></marker>
+</defs>
+<rect x="282" y="180" width="254" height="246" rx="14" fill="#eaf0ec"/>
+<text class="campaign-label" x="409" y="309" text-anchor="middle">Two branches of one FLT campaign</text>
+<text class="map-heading" x="24" y="34">Questions</text>
+<text class="map-heading" x="294" y="34">Experiments &amp; analysis</text>
+<text class="map-heading" x="576" y="34">Recorded results</text>
+<text class="map-heading" x="928" y="34">Next direction</text>
+<path class="map-edge record" data-row="putnam" data-from="putnam-question" data-to="putnam-experiment" d="M250 111 C272 111 272 111 294 111" marker-end="url(#map-en-record)"/>
+<path class="map-edge record" data-row="putnam" data-from="putnam-experiment" data-to="putnam-evidence" d="M524 111 C550 111 550 111 576 111" marker-end="url(#map-en-record)"/>
+<path class="map-edge direction" data-row="putnam" data-from="putnam-evidence" data-to="future" d="M848 111 C888 111 888 243 928 243" marker-end="url(#map-en-direction)"/>
+<path class="map-edge record" data-row="flt" data-from="flt-question" data-to="flt-experiment" d="M250 239 C272 239 272 239 294 239" marker-end="url(#map-en-record)"/>
+<path class="map-edge record" data-row="flt" data-from="flt-experiment" data-to="flt-evidence" d="M524 239 C550 239 550 239 576 239" marker-end="url(#map-en-record)"/>
+<path class="map-edge direction" data-row="flt" data-from="flt-evidence" data-to="future" d="M848 239 C888 239 888 295 928 295" marker-end="url(#map-en-direction)"/>
+<path class="map-edge record" data-row="traces" data-from="traces-question" data-to="traces-experiment" d="M250 367 C272 367 272 367 294 367" marker-end="url(#map-en-record)"/>
+<path class="map-edge record" data-row="traces" data-from="traces-experiment" data-to="traces-evidence" d="M524 367 C550 367 550 367 576 367" marker-end="url(#map-en-record)"/>
+<path class="map-edge direction" data-row="traces" data-from="traces-evidence" data-to="future" d="M848 367 C888 367 888 347 928 347" marker-end="url(#map-en-direction)"/>
+<path class="map-edge record" data-row="collective" data-from="collective-question" data-to="collective-experiment" d="M250 495 C272 495 272 495 294 495" marker-end="url(#map-en-record)"/>
+<path class="map-edge record" data-row="collective" data-from="collective-experiment" data-to="collective-evidence" d="M524 495 C550 495 550 495 576 495" marker-end="url(#map-en-record)"/>
+<path class="map-edge direction" data-row="collective" data-from="collective-evidence" data-to="future" d="M848 495 C888 495 888 399 928 399" marker-end="url(#map-en-direction)"/>
+<a class="map-node question" data-node="putnam-question" data-row="putnam" style="--tone:#a65039" href="../#project-putnam" target="_top" aria-label="How should verification · enter the reasoning loop?">
+<rect x="24" y="68" width="226" height="86" rx="9"/>
+<text class="node-title" x="137" y="104" text-anchor="middle">How should verification</text>
+<text class="node-subtitle" x="137" y="127" text-anchor="middle">enter the reasoning loop?</text>
+</a>
+<a class="map-node experiment" data-node="putnam-experiment" data-row="putnam" style="--tone:#a65039" href="../#project-putnam" target="_top" aria-label="Putnam 2025 · Lean tools + proof loop">
+<rect x="294" y="68" width="230" height="86" rx="9"/>
+<text class="node-title" x="409" y="104" text-anchor="middle">Putnam 2025</text>
+<text class="node-subtitle" x="409" y="127" text-anchor="middle">Lean tools + proof loop</text>
+</a>
+<a class="map-node evidence" data-node="putnam-evidence" data-row="putnam" style="--tone:#a65039" href="../#evidence-project-putnam" target="_top" aria-label="12/12 internal checks · 8 attempts per problem">
+<rect x="576" y="68" width="272" height="86" rx="9"/>
+<text class="node-title" x="712" y="104" text-anchor="middle">12/12 internal checks</text>
+<text class="node-subtitle" x="712" y="127" text-anchor="middle">8 attempts per problem</text>
+</a>
+<a class="map-node question" data-node="flt-question" data-row="flt" style="--tone:#216f69" href="../#project-flt" target="_top" aria-label="How can local work · support a shared proof?">
+<rect x="24" y="196" width="226" height="86" rx="9"/>
+<text class="node-title" x="137" y="232" text-anchor="middle">How can local work</text>
+<text class="node-subtitle" x="137" y="255" text-anchor="middle">support a shared proof?</text>
+</a>
+<a class="map-node experiment" data-node="flt-experiment" data-row="flt" style="--tone:#216f69" href="../#project-flt" target="_top" aria-label="ContextSwarm · System + FLTBench">
+<rect x="294" y="196" width="230" height="86" rx="9"/>
+<text class="node-title" x="409" y="232" text-anchor="middle">ContextSwarm</text>
+<text class="node-subtitle" x="409" y="255" text-anchor="middle">System + FLTBench</text>
+</a>
+<a class="map-node evidence" data-node="flt-evidence" data-row="flt" style="--tone:#216f69" href="../#evidence-project-flt" target="_top" aria-label="Parent-route lookup · Interface diagnosis + check">
+<rect x="576" y="196" width="272" height="86" rx="9"/>
+<text class="node-title" x="712" y="232" text-anchor="middle">Parent-route lookup</text>
+<text class="node-subtitle" x="712" y="255" text-anchor="middle">Interface diagnosis + check</text>
+</a>
+<a class="map-node question" data-node="traces-question" data-row="traces" style="--tone:#263c58" href="../#project-traces" target="_top" aria-label="What can later agents · actually build on?">
+<rect x="24" y="324" width="226" height="86" rx="9"/>
+<text class="node-title" x="137" y="360" text-anchor="middle">What can later agents</text>
+<text class="node-subtitle" x="137" y="383" text-anchor="middle">actually build on?</text>
+</a>
+<a class="map-node experiment" data-node="traces-experiment" data-row="traces" style="--tone:#263c58" href="../#project-traces" target="_top" aria-label="FLT trace analysis · Same campaign, later analysis">
+<rect x="294" y="324" width="230" height="86" rx="9"/>
+<text class="node-title" x="409" y="360" text-anchor="middle">FLT trace analysis</text>
+<text class="node-subtitle" x="409" y="383" text-anchor="middle">Same campaign, later analysis</text>
+</a>
+<a class="map-node evidence" data-node="traces-evidence" data-row="traces" style="--tone:#263c58" href="../#evidence-project-traces" target="_top" aria-label="Time-aligned case records · Candidate / feedback / use">
+<rect x="576" y="324" width="272" height="86" rx="9"/>
+<text class="node-title" x="712" y="360" text-anchor="middle">Time-aligned case records</text>
+<text class="node-subtitle" x="712" y="383" text-anchor="middle">Candidate / feedback / use</text>
+</a>
+<a class="map-node question" data-node="collective-question" data-row="collective" style="--tone:#526c88" href="../#project-collective" target="_top" aria-label="When can progress · sharing accelerate work?">
+<rect x="24" y="452" width="226" height="86" rx="9"/>
+<text class="node-title" x="137" y="488" text-anchor="middle">When can progress</text>
+<text class="node-subtitle" x="137" y="511" text-anchor="middle">sharing accelerate work?</text>
+</a>
+<a class="map-node experiment" data-node="collective-experiment" data-row="collective" style="--tone:#526c88" href="../#project-collective" target="_top" aria-label="Collective acceleration · Stochastic-process model">
+<rect x="294" y="452" width="230" height="86" rx="9"/>
+<text class="node-title" x="409" y="488" text-anchor="middle">Collective acceleration</text>
+<text class="node-subtitle" x="409" y="511" text-anchor="middle">Stochastic-process model</text>
+</a>
+<a class="map-node evidence" data-node="collective-evidence" data-row="collective" style="--tone:#526c88" href="../#evidence-project-collective" target="_top" aria-label="Completion-time analysis · Specific parameters + graphs">
+<rect x="576" y="452" width="272" height="86" rx="9"/>
+<text class="node-title" x="712" y="488" text-anchor="middle">Completion-time analysis</text>
+<text class="node-subtitle" x="712" y="511" text-anchor="middle">Specific parameters + graphs</text>
+</a>
+<a class="map-node future" data-node="future" href="../#questions" target="_top" aria-label="System-level self-evolution">
+<rect x="928" y="191" width="208" height="260" rx="10"/>
+<text class="future-title" x="1032" y="258" text-anchor="middle">System-level</text>
+<text class="future-title" x="1032" y="288" text-anchor="middle">self-evolution</text>
+<text class="future-small" x="1032" y="342" text-anchor="middle">Tools · shared state</text>
+<text class="future-small" x="1032" y="365" text-anchor="middle">Organization · search</text>
+<text class="future-small" x="1032" y="415" text-anchor="middle">To investigate</text>
+</a>
+</svg>

@@ -1,0 +1,114 @@
+<svg class="research-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 570" role="group" aria-labelledby="map-zh-CN-title map-zh-CN-desc" lang="zh-CN">
+<title id="map-zh-CN-title">问题、实验与证据如何连接</title>
+<desc id="map-zh-CN-desc">每一行将问题、实际工作与特定结果相连。虚线表示这些经历促成了后续问题，不表示已经实现自主演化或取得能力提升。</desc>
+<style>text{font-family:system-ui,-apple-system,"Segoe UI","Noto Sans CJK SC",sans-serif;fill:#172333}
+.map-heading{font-size:12px;letter-spacing:.6px;fill:#526172}
+.map-edge{fill:none;stroke:#829591;stroke-width:1.6}
+.map-edge.direction{stroke:#8291a4;stroke-dasharray:5 5}
+.map-node{text-decoration:none;cursor:pointer}
+.map-node rect{fill:#fff;stroke:#cbd5d2;stroke-width:1.2}
+.map-node .node-title{font-size:15px;font-weight:600}
+.map-node .node-subtitle{font-size:12.5px;fill:#526172}
+.map-node.question rect{fill:#f6f8f5}
+.map-node.question text{font-size:14px;font-weight:500}
+.map-node.experiment rect{fill:#f0f5f2;stroke:var(--tone)}
+.map-node.experiment .node-title{font-size:16px;fill:var(--tone)}
+.map-node:hover rect,.map-node:focus-visible rect{stroke:#914632;stroke-width:2.4}
+.map-node:focus-visible{outline:none}
+.map-node.is-active rect{stroke:#914632;stroke-width:2.4}
+.map-edge.is-active{stroke:#914632;stroke-width:2.2}
+.future rect{fill:#f4f6f8;stroke:#63758b;stroke-dasharray:5 4}
+.future .future-title{font-size:21px;font-weight:600}
+.future .future-small{font-size:12.5px;fill:#526172}
+.campaign-label{font-size:10px;fill:#526172}</style>
+<defs>
+<marker id="map-zh-CN-record" viewBox="0 0 10 8" refX="10" refY="4" markerWidth="8" markerHeight="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 4L0 8Z" fill="#829591"/></marker>
+<marker id="map-zh-CN-direction" viewBox="0 0 10 8" refX="10" refY="4" markerWidth="8" markerHeight="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 4L0 8Z" fill="#8291a4"/></marker>
+</defs>
+<rect x="282" y="180" width="254" height="246" rx="14" fill="#eaf0ec"/>
+<text class="campaign-label" x="409" y="309" text-anchor="middle">同一 FLT 项目的两个分支</text>
+<text class="map-heading" x="24" y="34">研究问题</text>
+<text class="map-heading" x="294" y="34">实验与分析</text>
+<text class="map-heading" x="576" y="34">已有结果与记录</text>
+<text class="map-heading" x="928" y="34">后续方向</text>
+<path class="map-edge record" data-row="putnam" data-from="putnam-question" data-to="putnam-experiment" d="M250 111 C272 111 272 111 294 111" marker-end="url(#map-zh-CN-record)"/>
+<path class="map-edge record" data-row="putnam" data-from="putnam-experiment" data-to="putnam-evidence" d="M524 111 C550 111 550 111 576 111" marker-end="url(#map-zh-CN-record)"/>
+<path class="map-edge direction" data-row="putnam" data-from="putnam-evidence" data-to="future" d="M848 111 C888 111 888 243 928 243" marker-end="url(#map-zh-CN-direction)"/>
+<path class="map-edge record" data-row="flt" data-from="flt-question" data-to="flt-experiment" d="M250 239 C272 239 272 239 294 239" marker-end="url(#map-zh-CN-record)"/>
+<path class="map-edge record" data-row="flt" data-from="flt-experiment" data-to="flt-evidence" d="M524 239 C550 239 550 239 576 239" marker-end="url(#map-zh-CN-record)"/>
+<path class="map-edge direction" data-row="flt" data-from="flt-evidence" data-to="future" d="M848 239 C888 239 888 295 928 295" marker-end="url(#map-zh-CN-direction)"/>
+<path class="map-edge record" data-row="traces" data-from="traces-question" data-to="traces-experiment" d="M250 367 C272 367 272 367 294 367" marker-end="url(#map-zh-CN-record)"/>
+<path class="map-edge record" data-row="traces" data-from="traces-experiment" data-to="traces-evidence" d="M524 367 C550 367 550 367 576 367" marker-end="url(#map-zh-CN-record)"/>
+<path class="map-edge direction" data-row="traces" data-from="traces-evidence" data-to="future" d="M848 367 C888 367 888 347 928 347" marker-end="url(#map-zh-CN-direction)"/>
+<path class="map-edge record" data-row="collective" data-from="collective-question" data-to="collective-experiment" d="M250 495 C272 495 272 495 294 495" marker-end="url(#map-zh-CN-record)"/>
+<path class="map-edge record" data-row="collective" data-from="collective-experiment" data-to="collective-evidence" d="M524 495 C550 495 550 495 576 495" marker-end="url(#map-zh-CN-record)"/>
+<path class="map-edge direction" data-row="collective" data-from="collective-evidence" data-to="future" d="M848 495 C888 495 888 399 928 399" marker-end="url(#map-zh-CN-direction)"/>
+<a class="map-node question" data-node="putnam-question" data-row="putnam" style="--tone:#a65039" href="../zh/#project-putnam" target="_top" aria-label="验证反馈如何 · 参与推理过程？">
+<rect x="24" y="68" width="226" height="86" rx="9"/>
+<text class="node-title" x="137" y="104" text-anchor="middle">验证反馈如何</text>
+<text class="node-subtitle" x="137" y="127" text-anchor="middle">参与推理过程？</text>
+</a>
+<a class="map-node experiment" data-node="putnam-experiment" data-row="putnam" style="--tone:#a65039" href="../zh/#project-putnam" target="_top" aria-label="Putnam 2025 · Lean 工具与证明闭环">
+<rect x="294" y="68" width="230" height="86" rx="9"/>
+<text class="node-title" x="409" y="104" text-anchor="middle">Putnam 2025</text>
+<text class="node-subtitle" x="409" y="127" text-anchor="middle">Lean 工具与证明闭环</text>
+</a>
+<a class="map-node evidence" data-node="putnam-evidence" data-row="putnam" style="--tone:#a65039" href="../zh/#evidence-project-putnam" target="_top" aria-label="12/12 内部验证 · 每题 8 次并行尝试">
+<rect x="576" y="68" width="272" height="86" rx="9"/>
+<text class="node-title" x="712" y="104" text-anchor="middle">12/12 内部验证</text>
+<text class="node-subtitle" x="712" y="127" text-anchor="middle">每题 8 次并行尝试</text>
+</a>
+<a class="map-node question" data-node="flt-question" data-row="flt" style="--tone:#216f69" href="../zh/#project-flt" target="_top" aria-label="局部工作如何 · 支持共同证明？">
+<rect x="24" y="196" width="226" height="86" rx="9"/>
+<text class="node-title" x="137" y="232" text-anchor="middle">局部工作如何</text>
+<text class="node-subtitle" x="137" y="255" text-anchor="middle">支持共同证明？</text>
+</a>
+<a class="map-node experiment" data-node="flt-experiment" data-row="flt" style="--tone:#216f69" href="../zh/#project-flt" target="_top" aria-label="ContextSwarm · 协作系统与 FLTBench">
+<rect x="294" y="196" width="230" height="86" rx="9"/>
+<text class="node-title" x="409" y="232" text-anchor="middle">ContextSwarm</text>
+<text class="node-subtitle" x="409" y="255" text-anchor="middle">协作系统与 FLTBench</text>
+</a>
+<a class="map-node evidence" data-node="flt-evidence" data-row="flt" style="--tone:#216f69" href="../zh/#evidence-project-flt" target="_top" aria-label="父路线反查接口 · 缺口诊断与专项验收">
+<rect x="576" y="196" width="272" height="86" rx="9"/>
+<text class="node-title" x="712" y="232" text-anchor="middle">父路线反查接口</text>
+<text class="node-subtitle" x="712" y="255" text-anchor="middle">缺口诊断与专项验收</text>
+</a>
+<a class="map-node question" data-node="traces-question" data-row="traces" style="--tone:#263c58" href="../zh/#project-traces" target="_top" aria-label="后继 Agent 实际 · 能够接续什么？">
+<rect x="24" y="324" width="226" height="86" rx="9"/>
+<text class="node-title" x="137" y="360" text-anchor="middle">后继 Agent 实际</text>
+<text class="node-subtitle" x="137" y="383" text-anchor="middle">能够接续什么？</text>
+</a>
+<a class="map-node experiment" data-node="traces-experiment" data-row="traces" style="--tone:#263c58" href="../zh/#project-traces" target="_top" aria-label="FLT 运行分析 · 同一项目的后续分析">
+<rect x="294" y="324" width="230" height="86" rx="9"/>
+<text class="node-title" x="409" y="360" text-anchor="middle">FLT 运行分析</text>
+<text class="node-subtitle" x="409" y="383" text-anchor="middle">同一项目的后续分析</text>
+</a>
+<a class="map-node evidence" data-node="traces-evidence" data-row="traces" style="--tone:#263c58" href="../zh/#evidence-project-traces" target="_top" aria-label="按当时状态核对案例 · 候选修改／反馈／使用">
+<rect x="576" y="324" width="272" height="86" rx="9"/>
+<text class="node-title" x="712" y="360" text-anchor="middle">按当时状态核对案例</text>
+<text class="node-subtitle" x="712" y="383" text-anchor="middle">候选修改／反馈／使用</text>
+</a>
+<a class="map-node question" data-node="collective-question" data-row="collective" style="--tone:#526c88" href="../zh/#project-collective" target="_top" aria-label="进度共享何时 · 加快群体完成？">
+<rect x="24" y="452" width="226" height="86" rx="9"/>
+<text class="node-title" x="137" y="488" text-anchor="middle">进度共享何时</text>
+<text class="node-subtitle" x="137" y="511" text-anchor="middle">加快群体完成？</text>
+</a>
+<a class="map-node experiment" data-node="collective-experiment" data-row="collective" style="--tone:#526c88" href="../zh/#project-collective" target="_top" aria-label="《集体加速》 · 随机过程与网络建模">
+<rect x="294" y="452" width="230" height="86" rx="9"/>
+<text class="node-title" x="409" y="488" text-anchor="middle">《集体加速》</text>
+<text class="node-subtitle" x="409" y="511" text-anchor="middle">随机过程与网络建模</text>
+</a>
+<a class="map-node evidence" data-node="collective-evidence" data-row="collective" style="--tone:#526c88" href="../zh/#evidence-project-collective" target="_top" aria-label="完成时间分析 · 特定参数及扩张图条件">
+<rect x="576" y="452" width="272" height="86" rx="9"/>
+<text class="node-title" x="712" y="488" text-anchor="middle">完成时间分析</text>
+<text class="node-subtitle" x="712" y="511" text-anchor="middle">特定参数及扩张图条件</text>
+</a>
+<a class="map-node future" data-node="future" href="../zh/#questions" target="_top" aria-label="系统级 自主演化">
+<rect x="928" y="191" width="208" height="260" rx="10"/>
+<text class="future-title" x="1032" y="258" text-anchor="middle">系统级</text>
+<text class="future-title" x="1032" y="288" text-anchor="middle">自主演化</text>
+<text class="future-small" x="1032" y="342" text-anchor="middle">工具 · 共享状态</text>
+<text class="future-small" x="1032" y="365" text-anchor="middle">组织方式 · 探索方法</text>
+<text class="future-small" x="1032" y="415" text-anchor="middle">待研究的方向</text>
+</a>
+</svg>
